@@ -30,7 +30,7 @@ using System.Collections;
 
                                 "Flat tire, had to call AAA: -$35",
 
-                                "Passenger left laptop in card. You pawned it for $30",
+                                "Passenger left laptop in car. You pawned it for $30",
 
                                 "Ran a stop sign and got pulled over: -$20",
 
@@ -62,7 +62,7 @@ using System.Collections;
 
                                 "Flat tire, had to call AAA: -$35",
 
-                                "Passenger left laptop in card. You pawned it for $30",
+                                "Passenger left laptop in car. You pawned it for $30",
 
                                 "Ran a stop sign and got pulled over: -$20",
 
