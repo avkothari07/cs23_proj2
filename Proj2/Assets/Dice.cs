@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Dice : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+int number = 1;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
+ void OnGUI() {
+
+     GUI.Button(new Rect(10,10,50,50), "Move " + number);
+        if (GUI.Button(new Rect(10,10,80,30), "Re-roll"))
+         { 
+            number = Random.Range(1,7);
+         }
+ }
 }
