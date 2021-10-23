@@ -6,12 +6,12 @@ public class Dice : MonoBehaviour
 {
 int number = 1;
 
- 
- void OnGUI() {
 
-     GUI.Button(new Rect(10,10,50,50), "Move " + number);
-        if (GUI.Button(new Rect(10,10,80,30), "Re-roll"))
-         { 
+ void OnGUI() {
+     //GUI.backgroundColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+     GUI.Box(new Rect(10,10,60,50), "Move " + number);
+        if (GUI.Button(new Rect(10,70,80,30), "Re-roll"))
+         {
             number = Random.Range(1,7);
          }
  }
