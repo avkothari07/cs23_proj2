@@ -3,7 +3,7 @@ using System.Collections;
 
  public class Clicker : MonoBehaviour
  {
-     int counter=0;
+     int counter=10;
      int cardint=0;
      string card = "";
      string[] card_text = new string[32] {"Uber stole your passenger: -$20",
