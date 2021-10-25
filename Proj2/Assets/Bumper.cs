@@ -30,10 +30,12 @@ public class Bumper : MonoBehaviour
         if (GUI.Button(new Rect(1100, 70, 80, 25), "Add Repair"))
         { // the IF is true = clicked, lets count one
             count = count + 5;
+            sourceBump.PlayOneShot(playBump, 0.9F);
         }
         if (GUI.Button(new Rect(1185, 70, 90, 25), "Lose Repair"))
         { // the IF is true = clicked, lets count one
             count = count - 5;
+            sourceBump.PlayOneShot(playBump, 0.9F);
         }
     }
 }
