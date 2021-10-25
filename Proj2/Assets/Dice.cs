@@ -21,7 +21,7 @@ int number = 1;
         if (GUI.Button(new Rect(10,70,80,30), "Re-roll"))
          {
             number = Random.Range(1,7);
-            sourceDice.PlayOneShot(playDice, 0.7F);
+            sourceDice.PlayOneShot(playDice, 0.9F);
         }
  }
 }

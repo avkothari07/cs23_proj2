@@ -1,8 +1,18 @@
 using UnityEngine;
 using System.Collections;
 
- public class Clicker : MonoBehaviour
+[RequireComponent(typeof(AudioSource))] //not sure what this does, but it works so I'm not removing it
+                                        //could easily be completely useless though
+public class Clicker : MonoBehaviour
  {
+     public AudioClip playMoney;
+     AudioSource sourceMoney;
+
+     void Start()
+     {
+        sourceMoney = GetComponent<AudioSource>();
+     }
+
      int counter=10;
      int cardint=0;
      string card = "";
@@ -76,11 +86,19 @@ using System.Collections;
         if (GUI.Button(new Rect(880, 70, 80, 25), "Add Money"))
          { // the IF is true = clicked, lets count one
             counter ++;
+            if (counter % 10 == 0)
+            {
+                sourceMoney.PlayOneShot(playMoney, 0.9F);
+            }
          }
          if (GUI.Button(new Rect(980, 70, 90, 25), "Lose Money"))
           { // the IF is true = clicked, lets count one
              counter --;
-          }
+             if (counter % 10 == 0)
+             {
+                sourceMoney.PlayOneShot(playMoney, 0.9F);
+             }
+        }
         if (GUI.Button(new Rect(550, 10, 300, 50), "Event Card: " + card))
         {
           card = card_text[cardint];
