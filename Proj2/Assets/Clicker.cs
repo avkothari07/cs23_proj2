@@ -86,7 +86,7 @@ public class Clicker : MonoBehaviour
         if (GUI.Button(new Rect(880, 70, 80, 25), "Add Money"))
          { // the IF is true = clicked, lets count one
             counter ++;
-            if (counter % 10 == 0)
+            if (counter % 5 == 0)
             {
                 sourceMoney.PlayOneShot(playMoney, 0.9F);
             }
@@ -94,7 +94,7 @@ public class Clicker : MonoBehaviour
          if (GUI.Button(new Rect(980, 70, 90, 25), "Lose Money"))
           { // the IF is true = clicked, lets count one
              counter --;
-             if (counter % 10 == 0)
+             if (counter % 5 == 0)
              {
                 sourceMoney.PlayOneShot(playMoney, 0.9F);
              }
